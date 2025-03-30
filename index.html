@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+
+    <!-- DaisyUI CDN -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css file connection -->
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body class="poppins boxBgColor">
+    <!-- Header Start-->
+
+    <header>
+      <!-- Navbar Start-->
+
+      <!-- Navbar Left Side DevBoard Start -->
+
+      <nav
+        class="flex items-center justify-between mt-3 mx-10 border rounded-2xl p-4 sectionBgColor"
+      >
+        <div class="flex gap-4 items-center">
+          <div><img src="./assets/logo.png" alt="" /></div>
+          <h1 class="fontSize35dot67px" class="font-bold">
+            <span class="font-light">Dev</span>Board
+          </h1>
+        </div>
+
+        <!-- Navbar Left Side DevBoard Closed Above -->
+
+        <!-- Navbar Right Side Start -->
+        <div class="flex items-center gap-8">
+          <!-- Navbar Number Counter Right Side Start -->
+          <div
+            class="flex items-center gap-4 w-32 justify-between px-4 border rounded-3xl boxBgColor"
+          >
+            <div>
+              <img src="./assets/checkbox.png" alt="" />
+            </div>
+            <h1 id="navBarNumberCounter" class="fontSize32px" class="font-bold">
+              24
+            </h1>
+          </div>
+
+          <!-- Navbar Number Counter Right Side Closed Above -->
+
+          <!-- Navbar Theme Generator Magic button Start -->
+
+          <div id="randomThemeGenerator">
+            <img src="./assets/theme-btn.png" alt="" />
+          </div>
+
+          <!-- Navbar Theme Generator Magic button Closed Above -->
+        </div>
+        <!-- Navbar Right Side Closed Above -->
+      </nav>
+
+      <!-- Navbar Closed Above -->
+    </header>
+    <!-- Header Closed Above -->
+
+    <!-- Main Section Start -->
+
+    <main class="flex mx-10 gap-10">
+      <!-- Left Side Section Start -->
+
+      <div>
+        <!-- Left Side Upper Section Start -->
+
+        <section class="mt-12 grid gap-4 grid-cols-[1fr_2fr_1fr]">
+          <!-- 1st div: task assigned  -->
+
+          <div class="p-2 flex items-center gap-5 border rounded-xl boxBgColor">
+            <div class="pl-4"><img src="./assets/checkbox.png" alt="" /></div>
+            <div class="grid grid-cols-1">
+              <h1 class="fontSize16px" class="font-medium">Task Assigned</h1>
+              <h1 id="numberCounter" class="fontSize32px" class="font-bold">
+                05
+              </h1>
+            </div>
+          </div>
+
+          <!-- 2nd div: discover -->
+
+          <div
+            id="redirectfile"
+            class="p-2 flex items-center gap-5 border rounded-xl gradientBackground"
+          >
+            <div class="pl-4"><img src="./assets/board.png" alt="" /></div>
+            <p
+              class="fontSize24px"
+              class="font-medium"
+              style="color: rgba(255, 255, 255, 1)"
+            >
+              Discover Something <br />
+              New Today!
+            </p>
+          </div>
+
+          <!-- 3rd div: Date -->
+
+          <div class="flex items-center gap-5 border rounded-xl boxBgColor">
+            <div class="pl-4"><img src="./assets/calender.png" alt="" /></div>
+
+            <div id="current-date"></div>
+          </div>
+        </section>
+
+        <!-- Left Side Upper Section Close Above -->
+
+        <!-- Left Side Lower Section Start -->
+
+        <section
+          class="mt-12 grid grid-cols-3 gap-4 rounded-lg"
+          id="ellipsis-applied"
+        >
+          <!-- 1st card -->
+          <div class="border space-y-4 p-4 rounded-lg boxBgColor">
+            <div class="fontSize16px" class="badge text-black p-4">
+              ShopEase
+            </div>
+            <h1 class="text-xl" class="font-bold">Fix Mobile Button Issue</h1>
+            <p class="fontSize16px">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+            <div class="flex justify-between">
+              <!-- Deadline Part Star -->
+              <div>
+                <h1 class="text-sm">Deadline</h1>
+                <h1 class="text-sm">21 March 2025</h1>
+              </div>
+              <button class="px-2 rounded-lg text-sm btn-click">
+                Completed
+              </button>
+            </div>
+          </div>
+          <!-- 2nd card -->
+          <div class="border space-y-4 p-4 rounded-lg boxBgColor">
+            <div class="fontSize16px" class="badge text-black p-4">
+              CloudSync
+            </div>
+            <h1 class="text-xl" id="title  font-bold">Add Dark Mode</h1>
+            <p class="fontSize16px">
+              Store the user's preference in localStorage, update CSS variables
+              dynamically, and apply a smooth transition effect.y
+            </p>
+            <div class="flex justify-between">
+              <!-- Deadline Part Start -->
+              <div>
+                <h1 class="text-sm">Deadline</h1>
+                <h1 class="text-sm">21 March 2025</h1>
+              </div>
+              <button class="px-2 rounded-lg text-sm btn-click">
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <!-- 3rd card -->
+          <div class="border space-y-4 p-4 rounded-lg boxBgColor">
+            <div class="fontSize16px" class="badge text-black p-4">
+              SwiftPay
+            </div>
+            <h1 class="text-xl" id="title  font-bold">Optimize Home page </h1>
+            <p class="fontSize16px">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+            <div class="flex justify-between">
+              <!-- Deadline Part Start -->
+              <div>
+                <h1 class="text-sm">Deadline</h1>
+                <h1 class="text-sm">21 March 2025</h1>
+              </div>
+              <button class="px-2 rounded-lg text-sm btn-click">
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <!-- 4th card    -->
+
+          <div class="border space-y-4 p-4 rounded-lg boxBgColor">
+            <div class="fontSize16px" class="badge text-black p-4">Meta</div>
+            <h1 class="text-xl" id="title  font-bold">Add new emoji 🤲</h1>
+            <p class="fontSize16px">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+            <div class="flex justify-between">
+              <!-- Deadline Part Start -->
+              <div>
+                <h1 class="text-sm">Deadline</h1>
+                <h1 class="text-sm">21 March 2025</h1>
+              </div>
+              <button class="px-2 rounded-lg text-sm btn-click">
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <!-- 5th card -->
+          <div class="border space-y-4 p-4 rounded-lg boxBgColor">
+            <div class="fontSize16px" class="badge text-black p-4">
+              Google LLC
+            </div>
+            <h1 class="text-xl" id="title  font-bold">Integrate OpenAI API</h1>
+            <p class="fontSize16px">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+            <div class="flex justify-between">
+              <!-- Deadline Part Start -->
+              <div>
+                <h1 class="text-sm">Deadline</h1>
+                <h1 class="text-sm">21 March 2025</h1>
+              </div>
+              <button class="px-2 rounded-lg text-sm btn-click">
+                Completed
+              </button>
+            </div>
+          </div>
+
+          <!-- last card    -->
+
+          <div class="border space-y-4 p-4 rounded-lg boxBgColor">
+            <div class="fontSize16px" class="badge text-black p-4">
+              Glassdoar
+            </div>
+            <h1 class="text-xl" id="title  font-bold">Improve Job searching</h1>
+            <p class="fontSize16px">
+              Debug using Chrome DevTools, check for overlapping elements, and
+              ensure onClick works properly and ensure onClick works properly
+            </p>
+            <div class="flex justify-between">
+              <!-- Deadline Part Start -->
+              <div>
+                <h1 class="text-sm">Deadline</h1>
+                <h1 class="text-sm">21 March 2025</h1>
+              </div>
+              <button class="px-2 rounded-lg text-sm btn-click">
+                Completed
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Left Side Lower Section Closed Above -->
+      </div>
+
+      <!-- Left Side Section Closed Above  -->
+
+      <!-- Right Side Section Start -->
+      <div>
+        <!-- Right Side Section Start -->
+        <section
+          class="space-y-4 bg-white w-72 h-[36.875rem] mt-12 border rounded-2xl sectionBgColor pt-6 pl-8"
+        >
+          <!-- Activity Session Start -->
+          <div class="flex pl-8 gap-4 items-center">
+            <div><img src="./assets/activity.png" alt="" /></div>
+            <h1 class="fontSize20px" class="font-bold">Activity Log</h1>
+          </div>
+
+          <button
+            id="btn-activity-log"
+            class="py-2 px-6 rounded-lg fontSize16px ml-9"
+          >
+            Clear history
+          </button>
+          <!-- Activity Session Closed Above -->
+          <!-- Submission Message Added Section Start -->
+          <div id="submittedTimeNotification"></div>
+          <!-- Submission Message Added Section Closed Above -->
+        </section>
+
+        <!-- Right Side section Closed Above -->
+      </div>
+      <!-- Right Side Section Closed -->
+    </main>
+    <!-- Main Section Closed Above -->
+
+    <!-- Script Collection Start -->
+
+    <!-- shared js file connection  -->
+
+    <script src="./utilities/utility.js"></script>
+
+    <!-- fontSize Conversion js file connection -->
+    <script src="scripts/fontSize.js"></script>
+
+    <!-- One Click All Message Show js file connection  -->
+    <script src="scripts/eventClick.js"></script>
+
+    <!-- Time Date js file connection -->
+    <script src="scripts/timeDate.js"></script>
+
+    <!-- Random Theme Color js file connection -->
+    <script src="scripts/randomThemeColor.js"></script>
+
+    <!-- Redirect to Blog.html file js connection -->
+    <script src="scripts/redirect.js" defer></script>
+
+    <!-- Script Collection Closed Above -->
+  </body>
+</html>
