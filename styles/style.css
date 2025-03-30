@@ -20,11 +20,8 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
-.btn-click {
-  background-color: rgba(55, 82, 253, 1);
-}
-
 .disabled-btn-bg-color,
+.btn-click,
 #btn-activity-log {
   background-color: rgba(55, 82, 253, 1);
 }

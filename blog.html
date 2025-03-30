@@ -13,8 +13,106 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- css file connection -->
+    <link rel="stylesheet" href="styles/blogStyle.css" />
   </head>
-  <body>
-    <h1>tag</h1>
+  <body id="bodyBg" class="text-2xl">
+    <!-- Header Start-->
+
+    <header>
+      <!-- Navbar Start-->
+      <div class="flex justify-around w-screen px-12 mt-2">
+        <div class="navbar px-4 rounded-lg" id="navBg">
+          <div class="navbar-start gap-4">
+            <div><img src="assets/logo.png" alt="" /></div>
+            <h1 class="text-3xl font-bold">
+              <span class="font-light">Dev</span>Board
+            </h1>
+          </div>
+
+          <div class="navbar-end">
+            <button
+              class="text-white btn p-2 text-xl rounded-lg"
+              id="btn-click-back"
+            >
+              Back to Desk
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Navbar Closed Above -->
+    </header>
+    <!-- Header Closed Above -->
+
+    <!-- Accordion Section Start -->
+    <section class="w-screen px-12 mt-4 space-y-4 pb-32">
+      <h1 class="text-center font-bold text-2xl my-4">Blogs</h1>
+      <!-- First  Question -->
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title font-semibold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </div>
+        <div class="collapse-content text-2xl text-justify">
+          Two distinct methods to select an element in the DOM. For instance,
+          document.getElementById() and document.querySelector()
+        </div>
+      </div>
+      <!-- Second Question -->
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent ?
+        </div>
+        <div class="collapse-content text-2xl text-justify">
+          InnerHTML: It includes text content of the element and html tags
+          inside the parent container. Even comments are shown. <br />
+          InnerText: It does not include html tags and displays visible text of
+          the element inside the parent container. <br />
+          TextContent: It also does not include html tags and displays visible
+          and invisible text of the element inside the parent container.
+        </div>
+      </div>
+      <!-- Third Question -->
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-3: What is event delegation in the DOM?
+        </div>
+        <div class="collapse-content text-2xl text-justify">
+          Event is not handled where event is triggered. Event is handled under
+          upper parent element.
+        </div>
+      </div>
+      <!-- Fourth Question -->
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-4: What is event bubbling in the DOM?
+        </div>
+        <div class="collapse-content text-2xl text-justify">
+          Event is propagated from child element to root element.
+        </div>
+      </div>
+      <!-- Fifth Question -->
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </div>
+        <div class="collapse-content text-2xl text-justify">
+          Create element: document.createElement(); <br />
+          Add element: element.appendChild(); <br />
+          Remove element: element.removeChild();
+        </div>
+      </div>
+    </section>
+
+    <!-- Redirect to index.html file js connection -->
+    <script src="scripts/2ndredirect.js"></script>
   </body>
 </html>

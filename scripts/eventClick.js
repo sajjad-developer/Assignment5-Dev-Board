@@ -1,18 +1,22 @@
 // Click Event For Left Side Section Button Start
 
 const buttons = document.getElementsByClassName("btn-click");
-
+let clickedbtnNumber = 0;
 for (const button of buttons) {
   button.addEventListener("click", function (event) {
     // Alert For All Button Start
-    alert("Submission Done");
+    alert("Board updated Successfully");
+
     //  Alert for All Button Closed Above
 
-    const lastButton = buttons[buttons.length - 1];
-
-    if (event.target === lastButton) {
-      alert("double alert");
+    // Special Alert When All Buttons Are Clicked Start
+    clickedbtnNumber++;
+    if (clickedbtnNumber === buttons.length) {
+      alert(`Congratulations!!! 🎉
+You have completed all the current tasks!`);
     }
+
+    // Special Alert When All Buttons Are Clicked Closed Above
 
     // Button Disabled Feature On Start
     event.target.disabled = true;
@@ -57,7 +61,8 @@ for (const button of buttons) {
     );
     const p = document.createElement("p");
     p.innerHTML = `
-    <p> You have completed the assignment on <span style="font-weight: bold; color: green;"> ${currentTime} </span>  </p>
+    <p style = "font-size: 16px; font-weight: normal; padding-left: 4px; padding-right: 4px;" >  You have completed the task <span style="font-weight: 700;" >
+${event.target.parentElement.parentElement.children[1].innerText} </span> at <span style="font-weight: bold; color: blue;"> ${currentTime} </span>  </p>
     
     `;
 
@@ -68,12 +73,6 @@ for (const button of buttons) {
 }
 
 // Click Event For Left Side Section Button Closed Above
-
-// Activity Session Button Click Event Start
-// document
-//   .getElementById("btn-activity-log")
-//   .addEventListener("click", function () {
-//  Clear Submitted Notification Section
 
 document
   .getElementById("btn-activity-log")
