@@ -21,5 +21,5 @@ document
     document.body.style.backgroundColor = randomColor;
     // document.body.style.color = randomColor;
 
-    // Random Background Color Style Start Closed Above
+    // Random Background Color Style Closed Above
   });
